@@ -20,14 +20,15 @@ item = [
 },
 
 {
-    "name": "Black T-shirt",
+    "name": "Red T-shirt",
     "price": 12.99,
-    "department": "women's shirts"
-    "description": "100 percent cotton, color: black"
-}
+    "department": "women's shirts",
+    "description": "100 percent cotton, color: blue"
+},
+
     ]
 
 for index, item in enumerate(item):
         print(index, ":", item["name"])
 
-        item[0]["name"]
+item[0]["Red T-Shirt"]
