@@ -5,7 +5,7 @@
 
 
 
-item = [
+items = [
 {
     "name": "White T-shirt",
     "price": 12.99,
@@ -60,13 +60,13 @@ cart = []
 prices = []
 cost = 0
 shop = True
-for index, item in enumerate(item):
+for index, item in enumerate(items):
         print(index, ":", item["name"],item["price"])
 
 while shop:
     add_to_cart = int(input("Add item to your cart? Type the number"))
-    cart.append(item[add_to_cart]["name"])
-    prices.append(item[add_to_cart]["price"])
+    cart.append(items[add_to_cart]["name"])
+    prices.append(items[add_to_cart]["price"])
     shop_continiue = input("continue shopping or check out? Enter Yes or No")
 
     if shop_continiue == "No":
@@ -75,6 +75,6 @@ while shop:
 for item in cart:
     print(f"{cart}")
 for price in prices:
-    cost += prices
+    cost += price
 
 print (f"{cart, cost}")
