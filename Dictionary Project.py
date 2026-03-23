@@ -45,23 +45,36 @@ item = [
 {
     "name": "black sweatpants, fold-over waistband",
     "price": 20.99,
-    "department": "women's apparel",
+    "department": "women's pants",
     "description": "100 percent cotton, color: black"
 }
     ]
 
-""" for index, item in enumerate(item):
-        print(index, ":", item["name"])
- """
-print(item[1]["name"])
 
 
 
-add_to_cart = (int(input("Add to cart?? If YES, put 1 if NO put 0")))
+""" print(item[2]["name"]) """
+
+
 cart = []
+prices = []
+cost = 0
+shop = True
+for index, item in enumerate(item):
+        print(index, ":", item["name"],item["price"])
 
-while add_to_cart == 1:
-    
+while shop:
+    add_to_cart = int(input("Add item to your cart? Type the number"))
+    cart.append(item[add_to_cart]["name"])
+    prices.append(item[add_to_cart]["price"])
+    shop_continiue = input("continue shopping or check out? Enter Yes or No")
 
-    if add_to_cart == 0:
-        print ("Item was not added to your cart.")
+    if shop_continiue == "No":
+         shop = False
+
+for item in cart:
+    print(f"{cart}")
+for price in prices:
+    cost += prices
+
+print (f"{cart, cost}")
