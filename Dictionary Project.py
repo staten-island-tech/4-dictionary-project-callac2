@@ -47,7 +47,25 @@ items = [
     "price": 20.99,
     "department": "women's pants",
     "description": "100 percent cotton, color: black"
-}
+},
+{
+    "name": "long sleeveless dress",
+    "price": 54.99,
+    "department": "women's formalwear",
+    "description": "100 percent cotton denim, color: pink"
+},
+{
+    "name": "short sleeveless dress",
+    "price": 54.99,
+    "department": "women's formalwear",
+    "description": "100 percent cotton denim, color: blue"
+},
+{
+    "name": "long sleeve dress",
+    "price": 54.99,
+    "department": "women's formalwear",
+    "description": "100 percent cotton denim, color: pink"
+},
     ]
 
 
@@ -78,3 +96,7 @@ for price in prices:
     cost += price
 
 print (f"{cart, cost}")
+
+def receipt(items):
+     for item in items:
+          item.name 
