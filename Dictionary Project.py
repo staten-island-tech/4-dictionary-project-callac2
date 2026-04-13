@@ -85,7 +85,7 @@ while shop:
     add_to_cart = int(input("Add item to your cart? Type the number"))
     cart.append(items[add_to_cart]["name"])
     prices.append(items[add_to_cart]["price"])
-    shop_continiue = input("continue shopping or check out? Enter Yes or No")
+    shop_continiue = input("continue shopping? Enter Yes or No")
 
     if shop_continiue == "No":
          shop = False
@@ -94,7 +94,7 @@ for item in cart:
     print(f"{cart}")
 for price in prices:
     cost += price
-
+8
 print (f"{cart, cost}")
 
 def receipt(items):
